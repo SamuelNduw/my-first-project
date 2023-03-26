@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans';
+}
+body{
+    background: linear-gradient(to right, #000428, #004e92);
+    margin: 0;
+    padding:0;
+    border:0;
+}
+
+/* NAVBAR */
+
+.container_1{
+    width:100vw;
+    height: 55px;
+    /* border-bottom: 0.5px solid black; */
+    display:inline-block;
+    background-color: rgba(99, 102, 100, 0.5);
+    box-shadow: 0px 0.5px 3px black;
+    
+    
+}
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right:5vw;
+    gap:7vw;
+    flex-shrink: 1;
+
+    height:100%;
+}
+nav:hover > :not(:hover){
+    opacity:0.4;
+}
+nav a{
+    text-decoration: none;
+    position:relative;
+    color:white;
+    font-size:1.1rem;
+    padding-right:10px;
+
+    transition: 0.3s;
+}
+
+.container_2 {
+    width:70vw;
+    height:75vh;
+    position:relative;
+    margin-top:6%;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 5px;;
+
+    border: 0.5px solid white;
+
+    display:flex;
+
+    font-family: 'Poppins';
+}
+.form {
+    width:45%;
+    /* border:2px solid skyblue; */
+
+    background-color:whitesmoke;
+}
+.form h3 {
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-top:6%;
+    font-family: 'Poppins';
+}
+@media (max-width:574px){
+    .form h3{
+        font-size:2.8rem;
+    }
+    .form button{
+        top:30px;
+    }
+    .check_wrapper{
+        position:relative;
+        top:1.2rem;
+        /* border:2px skyblue solid; */
+    }
+    .check_wrapper input{
+    scale:0.9;
+    }
+}
+.form .signup_contents{
+    /* border:2px solid red; */
+
+    display: block;
+    margin-top: 7vh;
+}
+.signup_contents label {
+    color:rgb(60, 57, 57);
+}
+.form .signup_contents > * {
+    display:block;
+    position:relative;
+    left: 50%;
+    transform:translateX(-50%);
+    text-align: center;
+    
+}
+.form .signup_contents input {
+    padding:1px;
+    margin-top: 1%;
+    margin-bottom:7%;
+    width:70%;
+    height:30px;
+    background-color:whitesmoke ;
+    border:none;
+    border-bottom: 1px solid black;
+
+    font-size:1.2rem;
+}
+.form .signup_contents input:focus{
+    outline:0;
+}
+.form button {
+    background: #212121;
+    padding: 8px 12px;
+    color:#ffff;
+    font-size:1.1rem;
+    border-radius:5px;
+
+    transition: 0.3s;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    width:70%;
+}
+.form button:hover {
+    color:black;
+    background-color:white;
+    scale:1.05;
+    border: 0.4px solid black;
+    box-shadow: 2px 2px 2px 2px;
+    cursor:pointer;
+}
+.check_wrapper{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.check_wrapper label {
+    font-size:1.05rem;  
+    color:rgb(60, 57, 57);
+}
+.check_wrapper input{
+    padding: 2px;
+    scale:2;
+    margin-left:5%;
+    border-radius:0px;
+    cursor:pointer;
+}
+.kid {
+    width:55%;
+    /* border:2px solid pink; */
+    background: url("signup_kid_playing.jpeg") rgba(2, 77, 138, 0.914);
+    background-size: cover;
+    background-blend-mode:overlay;
+    background-position: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.kid img {
+    z-index: 1;
+}

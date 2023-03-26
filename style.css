@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins&display=swap');
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Josefin Sans';
+}
+body{
+    background: linear-gradient(to right, #000428, #004e92);
+    margin: 0;
+    padding:0;
+    border:0;
+}
+
+/* NAVBAR */
+
+.container_1{
+    width:100vw;
+    height: 55px;
+    /* border-bottom: 0.5px solid black; */
+    display:inline-block;
+    background-color: rgba(99, 102, 100, 0.5);
+    box-shadow: 0px 0.5px 3px black;
+}
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right:5vw;
+    gap:7vw;
+    flex-shrink: 1;
+
+    height:100%;
+}
+nav:hover > :not(:hover){
+    opacity:0.4;
+}
+nav a{
+    text-decoration: none;
+    position:relative;
+    color:white;
+    font-size:1.1rem;
+    padding-right:10px;
+
+    transition: 0.3s;
+}
+.container_2{
+    width:100vw;
+    /* height:90vh; */
+    display:flex;
+    flex-direction:row;
+    flex:1;
+    align-items:center;
+    gap:5vw;
+
+    /* background-color: aquamarine; */
+}
+
+/* WELCOME, PARAGRAPH and SIGN UP */
+
+.info {
+    margin-left:8%;
+    
+    color:white;
+
+    /* border:2px solid black; */
+
+    align-self: center;
+    transform: translateY(15%);
+    
+}
+.info h2 {
+    flex:0;
+
+    font-size:5rem;
+    font-family:'Ubuntu';
+    margin-bottom:20px;
+    
+}
+.info p{
+    font-size:1.4rem;
+    /* background-color: #212121; */
+    width: 80%;
+    text-align: center;
+}
+.info a {
+    background: #212121;
+    text-decoration: none;
+    padding:15px 23px;
+    color: #ffff;
+    font-size:1.3rem;
+    display:inline-block;
+    margin:30px 0;
+    border-radius:5px;
+
+    font-family: 'Poppins';
+
+    transition: 0.4s;
+}
+.info a::before,
+.info a::after{
+    z-index:-1;
+    content:"";
+}
+.info a:hover {
+    color:black;
+    background-color:white;
+    scale:1.05
+}
+
+/* FORTNITE AND TEXT */
+
+.img-box {
+    width:50vw;
+    height:70vh;
+    position: relative;
+    margin-right:5%;
+    transform: translateY(11%);
+    
+    /* border:2px solid black; */
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+
+    transition: 0.7s;
+    
+}
+.img-box:hover{
+    scale:1.05;
+}
+.img-box img {
+    width:100%
+}
+.description {
+    width:100%;
+    
+    background-color: aliceblue;
+}
+.description p {
+    padding: 20px;
+    font-size:1.2rem;
+}
+@media (max-width:994px){
+    .container_2 {
+        flex-direction:column;
+        gap:15px;
+    }
+    .info {
+        width:90vw;
+
+        margin:5px;
+    }
+    .info > h2, p{
+        margin-left:50%;
+        transform: translateX(-50%);
+    }
+    .info > a {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.3rem;
+    }
+    .img-box{
+        width:60vw;
+        height:70vh;
+        justify-self: center;
+        margin:0;
+    }
+    .description p{
+        width:80%;
+    }
+}
+
