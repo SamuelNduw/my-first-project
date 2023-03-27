@@ -4,50 +4,157 @@
 *{
     padding:0;
     margin:0;
-    font-family: 'Josefin Sans';
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
+    font-family: 'Poppins';
 }
 body{
-    background: linear-gradient(to right, #000428, #004e92);
-    margin: 0;
-    padding:0;
-    border:0;
+    background: linear-gradient(to right, #000428, #004e92)
 }
+nav{
+    top:0;
+    height:65px;
+    width:100%;
+    background-color:rgba(52, 53, 54, 0.543);
+    z-index: 10000;
+    position: sticky;
 
-/* NAVBAR */
-
-.container_1{
-    width:100vw;
-    height: 55px;
-    /* border-bottom: 0.5px solid black; */
-    display:inline-block;
-    background-color: rgba(99, 102, 100, 0.5);
-    box-shadow: 0px 0.5px 3px black;
-    
-    
+    transition: .5s ease-in-out;
 }
-nav {
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right:5vw;
-    gap:7vw;
-    flex-shrink: 1;
-
-    height:100%;
+nav:hover{
+    background-color:rgb(6, 113, 194);
+    box-shadow: 0px 2px 5px #1f2340ad;
 }
-nav:hover > :not(:hover){
-    opacity:0.4;
+nav.sticky{
+    padding:5px 100px;
+    background: #fff;
 }
-nav a{
-    text-decoration: none;
-    position:relative;
+label.logo{
     color:white;
-    font-size:1.1rem;
-    padding-right:10px;
-
-    transition: 0.3s;
+    font-size:35px;
+    font-family: 'Shadows Into Light', cursive;
+    line-height:80px;
+    padding:0 100px;
+    font-weight:bold;
 }
+nav ul{
+    float:right;
+    margin-right:20px;
+}
+nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin:0 5px;
+}
+nav ul li a{
+    color:white;
+    font-size:17px;
+    padding:7px 13px;
+    text-transform:uppercase;
+    border-radius:3px;
+}
+.signup_nav{
+    background-color: rgb(255, 255, 255);
+    color:black;
+}
+.signup_nav:hover{
+    border-radius: 6px;
+background: white;
+box-shadow:  4px 4px 7px #0404049e;
+    transition:0.4s ease-in-out;
+}
+a.active,a:hover{
+    transition:.5s;
+    background-color: #1b9bff;
+}
+.checkbtn{
+    font-size:30px;
+    color:white;
+    float:right;
+    line-height:80px;
+    margin-right:40px;
+    cursor:pointer;
+    display:none;
+}
+#check{
+    display:none;
+}
+@media(max-width:952px){
+    label.logo{
+        font-size:30px;
+        padding-left:50px;
+    }
+    nav ul li a{
+        font-size:16px;
+    }
+}
+@media(max-width:858px){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height:100vh;
+        background: #2c3e50;
+        top:65px;
+        left:-100%;
+        text-align:center;
+        transition: all .5s;
+
+        z-index: 3;
+    }
+    nav ul li{
+        display:block;
+        margin:50px 0;
+        line-height:30px;
+    }
+    nav ul li a{
+        font-size:1rem;
+    }
+    a:hover,a.active{
+        background:none;
+        color:#0082e6;
+    }
+    #check:checked ~ ul{
+        left:-20%;
+    }
+}
+@media screen and (max-width:858px) and (orientation:landscape){
+    .checkbtn{
+        display:block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height:100vh;
+        background: #2c3e50;
+        top:65px;
+        left:-100%;
+        text-align:center;
+        transition: all .5s;
+
+        z-index: 3;
+    }
+    nav ul li{
+        display:block;
+        margin:3.5% 0;
+        line-height:20px;
+    }
+    nav ul li a{
+        font-size:1rem;
+    }
+    a:hover,a.active{
+        background:none;
+        color:#0082e6;
+    }
+    #check:checked ~ ul{
+        left:-20%;
+    }
+}
+
+/* Sign up */
 
 .container_2 {
     width:70vw;
