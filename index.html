@@ -6,26 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <script src="https://kit.fontawesome.com/edb59e48e2.js" crossorigin="anonymous"></script>
 </head>
 <body class="index">
 
     <!-- NAVBAR -->
-    <nav .navbar>
-        <input type="checkbox" id="check">
+    <nav class="navbar">
+        <input type="checkbox" data-navUl-target="#navUl" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
         <label class="logo">SAMMY</label>
-        <ul>
+        <ul id="navUl">
+            <button data-close-button class="close-button-nav" >&times;</button>
             <li><a href="">HOME</a></li>
             <li><a href="games.html">GAMES</a></li>
             <li><a href="">CONTACT</a></li>
             <li><a href="">ABOUT</a></li>
-            <li><a class="signup_nav" href="signup.html">SIGN UP</a></li>
+            <li><a data-modal-target="#modal" class="signup_nav" >SIGN UP</a></li>
         </ul>
-    </nav>
-    
+      </nav>
+    <!-- Salutation and Image box -->
    <div class="container_2">
         <div class="info">
             <h2>Welcome</h2>
@@ -36,7 +38,7 @@
                 <br> I constantly push code to this website to improve the content, in addition to adding content.  
                 <br> Feel free to visit all the pages on this website and leave a review.
             </p>
-            <a href="signup.html">Sign Up</a>
+            <a data-modal-target="#modal">Sign Up</a>
         </div>
 
         <div class="img-box">
@@ -49,6 +51,35 @@
         </div>
     </div> 
 
-    <script src="index.js"></script>
+    <!-- SIGN UP modal -->
+        <div class="modal" id="modal">
+            <div class="modal-header">
+            <div class="title">SIGN UP</div>
+            <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <label for="" class="email">EMAIL</label>
+                <input type="email" name="" id="" class="emailInput">
+                <label for="" class="password" >PASSWORD</label>
+                <input type="password" name="" id="passwordInput" class="passwordInput">
+                <div class="check_wrapper">
+                    <label class="togglePassword">Show Password</label>
+                    <input type="checkbox" class="checkbox" onclick="myFunction()">
+                </div>
+                <button>SIGN UP</button>
+                <br><br>
+                <hr>
+                <label for="" class="orConditional">OR</label>
+                <div class="socials">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <label for="" class="alreadyHave">Already have an Account?</label>
+                <a href="" class="login">LOGIN</a>
+            </div>
+        </div>
+        <div id="overlay"></div>
+
 </body>
 </html>
