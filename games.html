@@ -5,147 +5,372 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="games.css">
     <script src="https://kit.fontawesome.com/edb59e48e2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <!-- NAVBAR -->
-    <nav .navbar>
-        <input type="checkbox" id="check">
+    <nav class="navbar">
+        <input type="checkbox" data-navUl-target="#navUl" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
         <label class="logo">SAMMY</label>
-        <ul>
+        <ul id="navUl">
+            <button data-close-button class="close-button-nav" >&times;</button>
             <li><a href="index.html">HOME</a></li>
-            <li><a class="active" href="">GAMES</a></li>
+            <li><a href="">GAMES</a></li>
             <li><a href="">CONTACT</a></li>
             <li><a href="">ABOUT</a></li>
-            <li><a class="signup_nav" href="signup.html">SIGN UP</a></li>
+            <li><a data-modal-target="#modal" class="signup_nav" >SIGN UP</a></li>
         </ul>
-    </nav>
+      </nav>
 
    <!-- IMG-Slider -->
    <div class="container_2">
         <div class="img-slider">
             <div class="slide active">
-                <img src="apex-legends-keyart.jpeg" alt>
+                <img src="images/Warzone-2-cover.jpeg" alt>
                 <div class="info">
-                    <h2>Slide 01</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p>
+                    <!-- <h2>Slide 01</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p> -->
                 </div>
             </div>
             <div class="slide">
-                <img src="fortnite_season5.jpeg" alt>
+                <img src="images/fortnite-chapter4-season2.jpeg" alt>
                 <div class="info">
-                    <h2>Slide 02</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p>
+                    <!-- <h2>Slide 02</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p> -->
                 </div>
             </div>
             <div class="slide">
-                <img src="GOW.jpeg" alt>
+                <img src="images/GOW.jpeg" alt>
                 <div class="info">
-                    <h2>Slide 03</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p>
+                    <!-- <h2>Slide 03</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p> -->
                 </div>
             </div>
             <div class="slide">
-                <img src="Devin-Booker-NBA-2K23-Cover.png" alt>
+                <img src="images/Devin-Booker-NBA-2K23-Cover.png" alt>
                 <div class="info">
-                    <h2>Slide 04</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p>
+                    <!-- <h2>Slide 04</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p> -->
                 </div>
             </div>
             <div class="slide">
-                <img src="FIFA-23-Cover-2.jpeg" alt>
+                <img src="images/FIFA-23-Cover-2.jpeg" alt>
                 <div class="info">
-                    <h2>Slide 05</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p>
+                    <!-- <h2>Slide 05</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p> -->
                 </div>
             </div>
             <div class="slide">
-                <img src="EGS_MarvelsSpiderManMilesMorales_InsomniacGamesNixxesSoftware_S1_2560x1440-a0518b9f9f36a05294e37448df8a27a0.jpeg" alt>
+                <img src="images/EGS_MarvelsSpiderManMilesMorales_InsomniacGamesNixxesSoftware_S1_2560x1440-a0518b9f9f36a05294e37448df8a27a0.jpeg" alt>
                 <div class="info">
-                    <h2>Slide 06</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p>
+                    <!-- <h2>Slide 06</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p> -->
                 </div>
             </div>
             <div class="slide">
-                <img src="capsule_616x353.jpg" alt>
+                <img src="images/apex-legends-keyart.jpeg" alt>
                 <div class="info">
-                    <h2>Slide 07</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p>
+                    <!-- <h2>Slide 07</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus fugiat, consectetur architecto porro aperiam eligendi.</p> -->
                 </div>
             </div>
 
             <div class="navigation">
-                <div class="btn active"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
-                <div class="btn"></div>
+                <div class="slider-btn active"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
+                <div class="slider-btn"></div>
             </div>
         </div>
    </div>
 
-   <!-- Popular Games -->
-   <div class="container_3">
-        <h2>Popular</h2>
+   <!-- SIGN UP modal -->
+   <div class="modal" id="modal">
+    <div class="modal-header">
+    <div class="title">SIGN UP</div>
+    <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        <label for="" class="email">EMAIL</label>
+        <input type="email" name="" id="" class="emailInput">
+        <label for="" class="password" >PASSWORD</label>
+        <input type="password" name="" id="passwordInput" class="passwordInput">
+        <div class="check_wrapper">
+            <label class="togglePassword">Show Password</label>
+            <input type="checkbox" class="checkbox" onclick="myFunction()">
+        </div>
+        <button>SIGN UP</button>
+        <br><br>
+        <hr>
+        <label for="" class="orConditional">OR</label>
+        <div class="socials">
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <label for="" class="alreadyHave">Already have an Account?</label>
+        <a href="" class="login">LOGIN</a>
+    </div>
+</div>
+<div id="overlay"></div>
 
-        <div class="popular_games">
-            <div class="g1">
-                <div class="g1_sub">
-                    <div class="img_container">
-                        <img src="fifa-23-cover-star-kylian-mbappe-psg.jpg" alt="Fifa23">
-                    </div>
-                    <div class="g1_downfav">
-                        <button class="btn1">Add to Cart</button>
-                        <i id="heart1" class="fa-solid fa-heart"></i>
-                    </div>
+   <!------------ Product Slider 1 --------->
+   <section class="product" id="product-slider-1">
+        <h2 class="product-category">Popular</h2>
+        <span class="previous-btn"><i class="fa-solid fa-arrow-left"></i></span>
+        <span class="next-btn"><i class="fa-solid fa-arrow-right"></i></span>
+        <div class="product-container">
+            <!-- fifa23 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/fifa-23-cover.jpg" class="product-thumb" alt="">
+                    <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">FIFA 23</h2>
+                    <span class="price">$59.99</span>
                 </div>
             </div>
-            <div class="g1">
-                <div class="g1_sub">
-                    <div class="img_container">
-                        <img src="PRfYtTZQsuj3ALrBXGL8MjAH.jpg" alt="Spiderman">
-                    </div>
-                    <div class="g1_downfav">
-                        <button class="btn1">Add to Cart</button>
-                        <i id="heart2" class="fa-solid fa-heart"></i>
-                    </div>
+            <!-- cod mw2 2022 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/COD-MW2-2022-cover.jpg" class="product-thumb" alt="">
+                    <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Call of Duty MW2</h2>
+                    <span class="price">$69.99</span>
                 </div>
             </div>
-            <div class="g1">
-                <div class="g1_sub">
-                    <div class="img_container">
-                        <img src="wp11351403.png" alt="Nba2k23">
-                    </div>
-                    <div class="g1_downfav">
-                        <button class="btn1">Add to Cart</button>
-                        <i id="heart3" class="fa-solid fa-heart"></i>
-                    </div>
+            <!-- spiderman miles morales -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Spider-man Miles Morales cover.jpg" class="product-thumb" alt="">
+                    <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Spider-Man Miles Morales</h2>
+                    <span class="price">$37.95</span>
                 </div>
             </div>
-            <div class="g1">
-                <div class="g1_sub">
-                    <div class="img_container">
-                        <img src="GOW.jpeg" alt="Gow">
-                    </div>
-                    <div class="g1_downfav">
-                        <button class="btn1" id="id1" >Add to Cart</button>
-                        <i id="heart4" class="fa-solid fa-heart"></i>
-                    </div>
+            <!-- fortnite -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://store-images.s-microsoft.com/image/apps.13950.70702278257994163.eb8febd9-1124-4e74-9587-d5082fbfffb5.5422b74c-3e78-408f-8df6-9a88c288b704" class="product-thumb" alt="">
+                    <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Fortnite</h2>
+                    <span class="price">Free*</span>
+                </div>
+            </div>
+            <!-- gow ragnarok -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/GOW.jpeg" class="product-thumb" alt="">
+                    <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">God of War Ragnarok</h2>
+                    <span class="price">$59.99</span>
+                </div>
+            </div>
+            <!-- nba2k23 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/Nba2k23 cover.png" class="product-thumb" alt="">
+                    <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">NBA 2K23</h2>
+                    <span class="price">$59.99</span>
                 </div>
             </div>
             
         </div>
-   </div>
+   </section>
+
+<!------------ Product Slider 2 --------->   
+   <section class="product" id="product-slider-2">
+    <h2 class="product-category">New Releases</h2>
+    <span class="previous-btn"><i class="fa-solid fa-arrow-left"></i></span>
+    <span class="next-btn"><i class="fa-solid fa-arrow-right"></i></span>
+    <div class="product-container">
+        <!-- Assassin's Creed Mirage -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://whatifgaming.com/wp-content/uploads/2023/02/1676474054161-scaled.jpg" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Assassin's Creed Mirage</h2>
+                <span class="price">$49.99</span>
+            </div>
+        </div>
+        <!-- Hogwarts Legacy -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202208/0921/Ah7Ar9MU0r1BBlzAUflmhyQP.png" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Hogwarts Legacy</h2>
+                <span class="price">$69.99</span>
+            </div>
+        </div>
+        <!-- Horizon Call of the Mountain -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202210/2509/AFovANEviavzukbFOSRyPw4f.jpg" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Horizon Call of the Mountiain</h2>
+                <span class="price">$59.99</span>
+            </div>
+        </div>
+        <!-- Street Fighter 6 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://i.kym-cdn.com/photos/images/facebook/002/494/668/0c4.5e742961-aa3f-4ce1-9dcd-6abe2f444da6" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Street Fighter 6</h2>
+                <span class="price">$59.99</span>
+            </div>
+        </div>
+        <!-- Star Wars: Jedi Survivor -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://lumiere-a.akamaihd.net/v1/images/sw-jedi-survivor-key-art-1080x1080_c38222d5.jpeg?region=0,0,1080,1080" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Star Wars: Jedi Survivor </h2>
+                <span class="price">$54.45</span>
+            </div>
+        </div>
+
+        <!-- <div class="product-card">
+            <div class="product-image">
+                <img src="https://whatifgaming.com/wp-content/uploads/2023/02/1676474054161-scaled.jpg" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Name</h2>
+                <span class="price">$20</span>
+            </div>
+        </div> -->
+        
+    </div>
+</section>
+
+   <!------------ Product Slider 3 --------->
+   <section class="product" id="product-slider-3">
+    <h2 class="product-category">Online Multiplayer</h2>
+    <span class="previous-btn"><i class="fa-solid fa-arrow-left"></i></span>
+    <span class="next-btn"><i class="fa-solid fa-arrow-right"></i></span>
+    <div class="product-container">
+        <!-- GTA V -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="images/GTA-V-cover.jpeg" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">GTA V</h2>
+                <span class="price">$19.99</span>
+            </div>
+        </div>
+        <!-- Call of duty Warzone 2.0 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mw-wz/WZ2-S01-DMZ-TACTICS-TOUT.jpg" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Warzone 2.0</h2>
+                <span class="price">$69.99</span>
+            </div>
+        </div>
+        <!-- Fortnite -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://store-images.s-microsoft.com/image/apps.13950.70702278257994163.eb8febd9-1124-4e74-9587-d5082fbfffb5.5422b74c-3e78-408f-8df6-9a88c288b704" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Fortnite</h2>
+                <span class="price">Free*</span>
+            </div>
+        </div>
+        <!-- Apex Legends -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://cdna.artstation.com/p/assets/images/images/015/850/704/large/autumn-rain-turkel-apex-legends-boxart.jpg?1549912261" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Apex Legends</h2>
+                <span class="price">Free*</span>
+            </div>
+        </div>
+        <!-- Fall Guys -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://s1.gaming-cdn.com/images/products/7281/orig-fallback-v1/fall-guys-ultimate-knockout-pc-game-steam-cover.jpg?v=1651745246" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Fall Guys</h2>
+                <span class="price">Free*</span>
+            </div>
+        </div>
+        <!-- Among Us -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://cdn.mobygames.com/covers/9710602-among-us-windows-apps-front-cover.png" class="product-thumb" alt="">
+                <button class="card-btn-1"><i class="fa-solid fa-cart-shopping"></i></button>
+                <button class="card-btn-2"><i class="fa-solid fa-heart"></i></button>
+            </div>
+            <div class="product-info">
+                <h2 class="product-brand">Among Us</h2>
+                <span class="price">Free*</span>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
 
-   <script src="index.js"></script>
+   <script src="games.js"></script>
 
 </body>
 </html>

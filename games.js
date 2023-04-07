@@ -8,7 +8,7 @@ function myFunction(){
 }
 
 var slides = document.querySelectorAll('.slide');
-var btns = document.querySelectorAll('.btn');
+var btns = document.querySelectorAll('.slider-btn');
 let currentSlide = 1;
 
 // Javascript for image slider manual navigation
@@ -34,12 +34,16 @@ btns.forEach((btn, i) => {
 
 //Javascript for image slider autoplay navigation
 var repeat = function(activeClass){
-  let active = document.getElementsByClassName('active');
+  let active = document.getElementsByClassName('slider-btn');
+  let active1 = document.getElementsByClassName('slide');
   let i = 1;
 
   var repeater = () => {
     setTimeout(function(){
       [...active].forEach((activeSlide) => {
+        activeSlide.classList.remove('active');
+      });
+      [...active1].forEach((activeSlide) => {
         activeSlide.classList.remove('active');
       });
 
@@ -60,37 +64,37 @@ var repeat = function(activeClass){
 }
 repeat();
 
-let hearts = document.querySelectorAll('#heart1, #heart2, #heart3, #heart4')
+// let hearts = document.querySelectorAll('#heart1, #heart2, #heart3, #heart4')
 
-for(let heart of hearts){
-  heart.onclick = function(){
-    if(heart.style.color == 'red'){
-      heart.style.color = 'white'
-    } 
-    else{
-      heart.style.color = 'red'
-    };
-  ;}  
-};
+// for(let heart of hearts){
+//   heart.onclick = function(){
+//     if(heart.style.color == 'red'){
+//       heart.style.color = 'white'
+//     } 
+//     else{
+//       heart.style.color = 'red'
+//     };
+//   ;}  
+// };
 
-let heart_cart = document.querySelector('g1_downfav');
+// let heart_cart = document.querySelector('g1_downfav');
 
-heart_cart.addEventListener("mouseover", () => {
-  heart_cart.style.display = visible;
-});
+// heart_cart.addEventListener("mouseover", () => {
+//   heart_cart.style.display = visible;
+// });
 
-let stars = document.querySelectorAll('#star1, #star2, #star3, #star4, #star5')
+// let stars = document.querySelectorAll('#star1, #star2, #star3, #star4, #star5')
 
-for(let star of stars){
-  star.onclick = function(){
-    if(star.style.color == 'white'){
-      star.style.color ='yellow'
-    }
-    else{
-      star.style.color ='white'
-    }
-  }
-}
+// for(let star of stars){
+//   star.onclick = function(){
+//     if(star.style.color == 'white'){
+//       star.style.color ='yellow'
+//     }
+//     else{
+//       star.style.color ='white'
+//     }
+//   }
+// }
 
 // Sign Up modal
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
@@ -130,3 +134,38 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
+// Product Slider
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.next-btn')];
+const preBtn = [...document.querySelectorAll('.previous-btn')];
+
+productContainers.forEach((item, i) => {
+  let containerDimensions = item.getBoundingClientRect();
+  let containerWidth = containerDimensions.width;
+
+  nxtBtn[i].addEventListener('click', () => {
+      item.scrollLeft += containerWidth/1.5;
+  })
+
+  preBtn[i].addEventListener('click', () => {
+      item.scrollLeft -= containerWidth/1.5;
+  })
+})
+
+// Navbar toggles
+const navUl = document.querySelector('#navUl');
+const closeButton = document.querySelector('.close-button-nav');
+const checkbox = document.querySelector('.checkbtn');
+
+closeButton.onclick = function closeButton(){
+    navUl.style.left = "-100%";
+    checkbox.checked = false;
+    checkbox.style.scale = '1'
+}
+checkbox.onclick = function openButton(){
+    if(navUl.style.left = "-100%"){
+    navUl.style.left = "-20%";
+    checkbox.checked = true;
+    checkbox.style.scale = '0'
+    }
+}

@@ -396,8 +396,8 @@ footer{
     width: 600px;
     max-width: 80%;
 
-    box-shadow:  -15px 15px 36px #0667b24c,
-             15px -15px 36px #067ad251;
+    box-shadow:  -15px 15px 36px #0667b220,
+             15px -15px 36px #067ad21f;
 
     font-family: 'Poppins';
   }
