@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    background: linear-gradient(to right, #000428, #004e92);
+}
+.container1{
+    position:relative;
+    height:89vh;
+}
+.container1::before{
+    content: "";
+    border:white 2px solid;
+    background-image: url('images/Fortnite_Polo_2\ \(1\)\ \(1\).png');
+    opacity:0.7;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    left: 0;
+    top:0;
+    height:87vh;
+    width:100%;
+    z-index: -1;
+
+    filter:blur(1px);
+
+    display:flex;
+    flex-direction: column;
+}
+.textWrapper{
+    /* border:pink 3px solid; */
+    height:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-shadow: 5px 5px 5px rgba(5, 5, 5, 0.397);
+}
+.textWrapper .primaryText{
+    font-size: 3.4rem;
+    font-weight: 800;
+    color:white;
+    width:65%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.textWrapper .secondaryText{
+    font-size: 1.2rem;
+    text-align: center;
+    color:#fbfbfbb4;
+    width: 50%;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.buttonWrapper {
+    text-align: center;
+    /* border:2px solid magenta; */
+    height:30%;
+}
+.buttonWrapper button{
+    background-color: aliceblue;
+    outline: 0;
+    border:0;
+    text-transform: uppercase;
+    padding:12px 30px;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    font-weight: 800;
+
+    position: relative;
+    margin-top: 18px;
+    cursor:pointer;
+    transition: 0.5s;
+}
+.buttonWrapper button:hover{
+    box-shadow: 10px 10px 5px #0004286d;
+}
+.buttonWrapper .gamesButton{
+    background-color: #005eff;
+    margin-left: 40px;
+    color:white;
+}
+
+@media(max-width:900px) {
+    .textWrapper .primaryText{
+        font-size: 3.2rem;
+    }
+    .textWrapper .secondaryText{
+        font-size:1.1rem;
+    }
+    .buttonWrapper button{
+        font-size: 1.25rem;
+        padding:10px 25px;
+    }
+}
+@media(max-width:660px){
+    .textWrapper .secondaryText{
+        width:60%;
+    }
+}
+@media(max-width:550px){
+    .textWrapper .primaryText{
+        font-size: 3rem;
+    }
+    .textWrapper .secondaryText{
+        width:70%;
+    }
+}
+
+
+.container2{
+    position:relative;
+    /* height:220vh; */
+    width:98%;
+    /* border: yellow 2px solid; */
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display:grid;
+    grid-template-areas: 
+        "item1 item1"
+        "item2 item3"
+        "item4 item3"
+        "item5 item5";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 400px auto auto 350px;
+    grid-gap:10px;
+
+}
+.container2 .seeMore{
+    display:block;
+    color:#005eff;
+    cursor:pointer;
+    padding:15px 0;
+}
+.container2 .secondaryLabel{
+    color:#ffffff7e
+}
+.game1,.game2,
+.game4,.game5{
+    background-color: rgba(0, 0, 0, 0.64);
+}
+.game1{
+    grid-area: item1;
+}
+.game1 .nested-grid{
+    display:grid;
+    grid-template-areas: 
+        "section1 section2 section3";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px;
+    grid-gap:10px;
+}
+.game1 .nested-grid > *{
+    /* border:2px solid yellow; */
+}
+
+.nested-grid i{
+    color:whitesmoke;
+    font-size: 7rem;
+
+    display: block;
+    
+    margin-top: 15px;
+}
+.game1-primaryText{
+    color:whitesmoke;
+    font-size: 1.9rem;
+    display:block;
+}
+.game1-secondaryText{
+    color:#ffffff7e;
+    display:block;
+    
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 1.15rem;
+    width:90%;
+    /* border:greenyellow 2px solid; */
+}
+.part1{
+    grid-area:section1;
+
+    text-align: center;
+}
+
+.part2{
+    grid-area: section2;
+
+    text-align: center;
+}
+
+.part3{
+    grid-area: section3;
+
+    text-align: center;
+}
+
+.game2{
+    grid-area: item2;
+}
+.game2 img,
+.game4 img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top:10px;
+    border-radius: 5px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    width:480px;
+    
+    margin-top: 20px;
+    
+    cursor: pointer;
+}
+.game2 label,
+.game4 label{
+    text-align: center;
+    color:white;
+}
+.game2 .primaryLabel,
+.game4 .primaryLabel{
+    display:block;
+    font-size: 2rem;
+}
+.game2 .secondaryLabel,
+.game4 .secondaryLabel{
+    display:block;
+    font-size: 1.1rem;
+
+}
+.game3{
+    grid-area: item3;
+    background-color: rgba(0, 0, 0, 0.646);
+}
+.game3 .primaryBigLabel{
+    display:block;
+    text-align: center;
+    color:white;
+    font-size:2.7rem;
+
+    /* margin-top: 30px; */
+}
+.game3 .secondaryLabel{
+    font-size: 1.1rem;
+    width:90%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+.game3 .platforms{
+    display:flex;
+    position:relative;
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    gap:20%;
+
+    justify-content: center;
+
+    /* border:2px red solid; */
+}
+.game3 .platforms i{
+    font-size: 5rem;
+    color:whitesmoke;
+}
+.grid-of-games{
+    display:grid;
+    gap:10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    width:90%;
+    height:20vw;
+    /* border:2px yellowgreen solid; */
+    grid-template-areas: 
+        "play1 play3 play2 play2"
+        "play1 play3 play2 play2"
+        "play1 play3 play2 play2";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.grid-of-games > *{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 2px;
+}
+.grid-of-games .play1{
+    grid-area: play1;
+    background-image: url("images/NFSUnbound.jpg");
+}
+.grid-of-games .play2{
+    grid-area: play2;
+    background-image: url("images/TheLastOfUs.jpg");
+}
+.grid-of-games .play3{
+    grid-area: play3;
+    background-image: url("images/GOW.jpeg");
+}
+.game4{
+    grid-area: item4;
+}
+.game5{
+    grid-area: item5;
+}
+.container2 .seeMore{
+    display:block;
+    color:#005eff;
+}
+@media(max-width:950px){
+    .container2{
+        grid-template-areas: 
+        ;
+    }
+}
+
+
+/* .container2::before{
+    content: "";
+    border:white 2px solid;
+    background-image: url('images/EGS_MarvelsSpiderManMilesMorales_InsomniacGamesNixxesSoftware_S1_2560x1440-a0518b9f9f36a05294e37448df8a27a0.jpeg');
+    opacity:0.3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    left: 0;
+    top:0;
+    height:87vh;
+    width:100%;
+    z-index: -1;
+
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+ 
