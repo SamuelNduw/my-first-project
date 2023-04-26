@@ -223,7 +223,7 @@ nav a.active,nav a:hover{
 .container1::before{
   content: "";
   
-  background-image: url('images/Fortnite_Polo_2\ \(1\)\ \(1\).png');
+  background-image: url('images/Fortnite_Polo_2\ \(1\)\ \(1\).jpg');
   opacity:0.7;
   background-size:cover;
   background-repeat: no-repeat;
