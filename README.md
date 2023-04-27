@@ -15,6 +15,8 @@ As the field of e-commerce design is always evolving, I constantly test new stra
 **Notice**
 Transaction, Cart, Check Out Process and Search functions are not yet present, but will be added soon!
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=SamuelNduw&show_icons=true&theme=radical)
+
 Skills: JS / HTML / CSS
 
 - 🔭 I’m currently working on this E-commerce page. 
