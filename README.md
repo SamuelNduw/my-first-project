@@ -13,7 +13,7 @@ Each page has been carefully designed to increase the chances of a sale, with cl
 As the field of e-commerce design is always evolving, I constantly test new strategies to improve website navigation, checkout flow, and customer support. I look forward to developing and testing new assumptions and design hypotheses to establish a new "best practice" for e-commerce website design on this site.
 
 **Notice**
-Transaction, Cart and Search functions are not yet present, but will be added soon!
+Transaction, Cart, Check Out Process and Search functions are not yet present, but will be added soon!
 
 Skills: JS / HTML / CSS
 
