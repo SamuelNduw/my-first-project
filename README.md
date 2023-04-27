@@ -1,3 +1,5 @@
+#my-first-project E-commerce site
+
 ### Hi there 👋, My name is **Samuel Nduw**
 #### I am Web developer (Frontend)
 Welcome to my ecommerce website repository! This website is designed to showcase my frontend skills and knowledge on SEO. 
