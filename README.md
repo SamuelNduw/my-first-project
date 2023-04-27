@@ -1,4 +1,4 @@
-# my-first-project E-commerce site
+## my-first-project E-commerce site
 
 ### Hi there 👋, My name is **Samuel Nduw**
 #### I am Web developer (Frontend)
