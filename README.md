@@ -4,7 +4,7 @@
 #### I am Web developer (Frontend)
 Welcome to my ecommerce website repository! This website is designed to showcase my frontend skills and knowledge on SEO. 
 
-
+[E-Commerce Website](https://samuelnduw.github.io/my-first-project/)
 
 Inspired by top e-commerce websites like Apple and WebEverything, I've created a seamless and user-friendly website. Navigation is easy with a clear information architecture and site-wide menu.
 
