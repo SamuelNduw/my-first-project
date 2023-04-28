@@ -82,7 +82,7 @@ nav ul li a{
   box-shadow:  4px 4px 7px #0404049e;
   transition:0.4s ease-in-out;
 }
-a.active,a:hover{
+nav a.active,nav a:hover{
   transition:.5s;
   background-color: #1b9bff;
 }
@@ -214,6 +214,8 @@ nav ul li{
       left:-20%;
   } */
 }
+
+
 /* Slider */
 
 .container_2{
@@ -724,6 +726,87 @@ nav ul li{
     grid-column: span 2;
     margin-bottom: 10px;
   }
+
+  /* Footer */
+
+  .footerContainerMain{
+    width:98%;
+    position:relative;
+    
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height:150px;
+
+    background-color: #000000a3;
+  }
+  footer{
+    position: relative;
+    height:100%;
+    display:flex;
+  }
+  
+  .footerContainer{
+    color:white;
+    width:100%;
+    /* height:60%; */
+    display:grid;
+    grid-template-areas: 
+        "con nav fol";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    /* grid-row-end: span; */
+    align-items:center;
+    gap:10px;
+  }
+  .footerContainer > *{
+    text-align: left;
+    padding:0 20px;
+    height:auto;
+  }
+  
+  .footerContainer .navigation a {
+    display:block;
+    color:#fbfbfbb4;
+  }
+  .footerContainer h3{
+    font-size: 1.7rem;
+  }
+  .contactUs{
+    grid-area:con;
+  }
+  .contactUs p{
+    color:#fbfbfbb4;
+  }
+  .navigation{
+    grid-area:nav;
+  }
+  .followUs{
+    grid-area:fol;
+  }
+  .followUs a{
+    color:#fbfbfbb4;
+    font-size: 2rem;
+  }
+  .followUs .fa.fa-github{
+    margin-left: 0;
+  }
+  .followUs .fa.fa-twitter,
+  .followUs .fa.fa-linkedin{
+    margin-left: 40px;
+  }
+  
+  .text-center{
+    color:white;
+    display:block;
+    position:relative;
+    text-align: center;
+    font-size: 0.9rem;
+    padding:20px 0;
+    background-color: rgba(0, 0, 0, 0.639);
+  }
+
+
   @media(max-width:768px){
     .product-category {
       margin-bottom: 36px;
@@ -752,6 +835,73 @@ nav ul li{
       font-size: 19px;
     }
   }
+  @media(max-width:716px){
+    .footerContainerMain{
+      height:240px;
+    }
+    .footerContainer{
+      grid-template-areas: 
+          "con nav"
+          "fol fol"
+          ;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-row-end: span;
+      align-items:center;
+      gap:10px;
+      }
+      .contactUs{
+      grid-area:con;
+      }
+      .navigation{
+      grid-area:nav;
+      }
+      .followUs{
+      grid-area:fol;
+      }
+  }
+  @media(max-width:600px){
+    .footerContainer h3{
+      font-size: 1.4rem;
+      }
+      .followUs a{
+      color:#fbfbfbb4;
+      font-size: 1.5rem;
+      }
+      .followUs .fa.fa-twitter,
+      .followUs .fa.fa-linkedin{
+          margin-left: 20px;
+      }
+      .footerContainer p,
+      .footerContainer .navigation a{
+          font-size: 0.93rem;
+      }
+  }
+  @media(max-width:550px){
+    .footerContainerMain{
+      height:220px;
+    }
+    .footerContainer{
+      grid-template-areas: 
+          "con nav"
+          "fol fol"
+          ;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-row-end: span;
+      align-items:center;
+      gap:10px;
+      }
+      .contactUs{
+      grid-area:con;
+      }
+      .navigation{
+      grid-area:nav;
+      }
+      .followUs{
+      grid-area:fol;
+      }
+  }
   @media(max-width:500px){
     .product-category {
       margin-bottom: 32px;
@@ -779,6 +929,55 @@ nav ul li{
     .price{
       font-size: 18px;
     }
+  }
+  @media(max-width:480px){
+    .footerContainerMain{
+      height:350px;
+    }
+    .footerContainer{
+      grid-template-areas: 
+          "con" 
+          "nav"
+          "fol"
+          ;
+      /* grid-template-columns: 1fr; */
+      grid-template-rows: repeat(3, auto);
+      grid-row-end: span;
+      align-items:center;
+      gap:10px;
+      }
+      .contactUs{
+      grid-area:con;
+      }
+      .navigation{
+      grid-area:nav;
+      }
+      .followUs{
+      grid-area:fol;
+      }
+  }
+  @media(max-width:385px){
+    .footerContainer{
+      grid-template-areas: 
+          "con" 
+          "nav"
+          "fol"
+          ;
+      /* grid-template-columns: 1fr; */
+      grid-template-rows: repeat(3, auto);
+      grid-row-end: span;
+      align-items:center;
+      gap:10px;
+      }
+      .contactUs{
+      grid-area:con;
+      }
+      .navigation{
+      grid-area:nav;
+      }
+      .followUs{
+      grid-area:fol;
+      }
   }
   @media only screen and (max-device-width:768px){
     .product-category {
