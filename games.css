@@ -364,7 +364,7 @@ nav ul li{
 .modal-body {
   padding: 10px 15px;
   text-align: center;
-  background-color: #19428a;
+  background-color: rgba(31, 32, 33, 0.905);
 }
 .modal-body .email{
   color:white;
@@ -382,7 +382,7 @@ nav ul li{
   /* border-radius: 5px; */
   border:none;
   border-bottom:2px solid white;
-  background-color: #19428a;
+  background-color: rgba(36, 42, 53, 0.364);
   color:white;
   font-size:1.1rem;
   padding:6px 5px;
