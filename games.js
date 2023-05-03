@@ -1,3 +1,4 @@
+//Password Toggle
 function myFunction(){
     var x = document.getElementById("myInput");
     if (x.type === "password") {
@@ -64,37 +65,6 @@ var repeat = function(activeClass){
 }
 repeat();
 
-// let hearts = document.querySelectorAll('#heart1, #heart2, #heart3, #heart4')
-
-// for(let heart of hearts){
-//   heart.onclick = function(){
-//     if(heart.style.color == 'red'){
-//       heart.style.color = 'white'
-//     } 
-//     else{
-//       heart.style.color = 'red'
-//     };
-//   ;}  
-// };
-
-// let heart_cart = document.querySelector('g1_downfav');
-
-// heart_cart.addEventListener("mouseover", () => {
-//   heart_cart.style.display = visible;
-// });
-
-// let stars = document.querySelectorAll('#star1, #star2, #star3, #star4, #star5')
-
-// for(let star of stars){
-//   star.onclick = function(){
-//     if(star.style.color == 'white'){
-//       star.style.color ='yellow'
-//     }
-//     else{
-//       star.style.color ='white'
-//     }
-//   }
-// }
 
 // Sign Up modal
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
