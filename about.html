@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/edb59e48e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <input type="checkbox" data-navUl-target="#navUl" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">SAMMY</label>
+        <ul id="navUl">
+            <button data-close-button class="close-button-nav" >&times;</button>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="games.html">GAMES</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a data-modal-target="#modal" class="signup_nav" >SIGN UP</a></li>
+        </ul>
+      </nav>
+
+
+    <div class="aboutContainer">
+        <div class="aboutBackground">
+            <div class="backgroundText">
+                <h2>BACKGROUND</h2>
+                <p>
+                    I am a web developer and software engineer with a strong proficiency in HTML, CSS, and JavaScript. I am currently in my first year of computer science at university, where I am constantly expanding my knowledge and skills in programming and software development.
+                </p>
+            </div>
+            <div class="backgroundImage">
+                <div class="pro-picContainer">
+                    <img src="images/profilepic.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="aboutSkills">
+            <div class="backgroundText">
+                <h2>SKILLS</h2>
+                <p>
+                    I am a web developer and software engineer with a strong proficiency in HTML, CSS, and JavaScript. I am currently in my first year of computer science at university, where I am constantly expanding my knowledge and skills in programming and software development.
+                </p>
+            </div>
+            <div class="backgroundImage">
+                
+            </div>
+        </div>
+        <div class="aboutFuture"></div>
+        
+    </div>
+
+
+        <!-------- Footer -------->
+    <div class="footerContainerMain">
+        <footer>
+            <div class="footerContainer">
+                <div class="contactUs">
+                    <h3>Contact Us</h3>
+                    <p>Email: samuelwamankalnduw@gmail.com</p>
+                    <p>Phone: +264 xx xxx xxxx</p>
+                    <p>Address: 123 Main St, Anytown USA</p>
+                </div>
+                <div class="navigation">
+                    <h3>Navigation</h3>
+                    <a href="index.html">Home</a>
+                    <a href="games.html">Games</a>
+                    <a href="#">About</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="followUs">
+                    <h3>Follow Us</h3>
+                    <a href="https://github.com/SamuelNduw"><i class="fa fa-github"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/samuel-nduw-53153126a/"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </footer>
+        <p class="text-center">Copyright © 2023 SAMMY
+            All rights reserved.</p>
+    </div>
+
+    <!-- SIGN UP modal -->
+   <div class="modal" id="modal">
+    <div class="modal-header">
+    <div class="title">SIGN UP</div>
+    <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modal-body">
+        <label for="" class="email">EMAIL</label>
+        <input type="email" name="" id="" class="emailInput">
+        <label for="" class="password" >PASSWORD</label>
+        <input type="password" name="" id="passwordInput" class="passwordInput">
+        <div class="check_wrapper">
+            <label class="togglePassword">Show Password</label>
+            <input type="checkbox" class="checkbox" onclick="myFunction()">
+        </div>
+        <button>SIGN UP</button>
+        <br><br>
+        <hr>
+        <label for="" class="orConditional">OR</label>
+        <div class="socials">
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <label for="" class="alreadyHave">Already have an Account?</label>
+        <a href="" class="login">LOGIN</a>
+    </div>
+    </div>
+    <div id="overlay"></div>
+
+    <script src="about.js"></script>
+
+</body>
+</html>
