@@ -217,51 +217,176 @@ nav ul li{
 
 .aboutContainer{
   color:white;
-  width:100vw;
-  border:2px red dashed;
+  width:98vw;
+  margin-left: auto;
+  margin-right: auto;
+  /* border:2px red dashed; */
   margin-top: 10px;
-  /* height:600px; */
-  display:grid;
-  grid-template-areas: 
-  "bac"
-  "skil"
-  "fut";
-  grid-template-rows: repeat(3, 1fr);
+  
   background-color:rgba(0, 0, 0, 0.64);
 }
 .aboutBackground{
-  grid-area: bac;
-  display:flex;
+  width:60%;
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 .backgroundText{
-  border:2px dashed yellowgreen;
-  width:50%;
+  /* border:2px dashed yellowgreen; */
+  width:100%;
   padding:15px;
 }
 .backgroundText h2{
   font-size: 3rem;
+}
+@media(max-width:480px){
+  .backgroundText h2{
+    font-size: 2.4rem;
+  }
+}
+@media(max-width:375px){
+  .backgroundText h2{
+    font-size: 2.1rem;
+  }
+  .aboutBackground{
+    width:80%;
+  }
 }
 .backgroundText p{
   font-size:1.05rem;
   padding-top: 40px;
 }
 .backgroundImage{
-  width:50vw;
-  border:2px yellow dashed;
+  width:100%;
+  /* border:2px yellow dashed; */
+  
 }
 .backgroundImage .pro-picContainer{
-  border:2px dashed red;
+  /* border:2px dashed red; */
+  width:200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  
 }
 .backgroundImage .pro-picContainer img{
   border-radius: 50%;
-  scale:0.6;
+  width:200px;
 }
 
 .aboutSkills{
-  grid-area: skil;
+  width:60%;
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
 }
-.aboutFuture{
-  grid-area: fut;
+.skillsIcons{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap:30px;
+
+  /* border:indianred 2px dashed; */
+}
+.skillsIcons i{
+  font-size: 5rem;
+  transition:0.5s;
+}
+@media(max-width:450px){
+  .skillsIcons{
+    flex-wrap:wrap;
+  }
+}
+.skillsIcons .fa-brands.fa-js:hover{
+  color:#F7DF1E;
+}
+.fa-brands.fa-html5:hover{
+  color:#E34F26;
+}
+.skillsIcons .fa-brands.fa-css3:hover{
+  color:#1572B6
+}
+
+.reviewUs{
+  /* height:600px; */
+  width:100%;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  /* border:2px yellow dashed; */
+}
+.reviewUs h1{
+  font-size: 3rem;
+  text-align: center;
+  padding-top:30px;
+}
+@media(max-width:480px){
+  .reviewUs h1{
+    font-size: 2.6rem;
+  }
+}
+.reviewUs .formContainer{
+  background-color: #303b4d;
+  max-width:600px;
+  min-width: 200px;
+  height: 450px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  display:grid;
+}
+.reviewUs form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input[type="text"], input[type="email"], select, textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: white;
+  color: #333;
+  width: 85%;
+  max-width: 400px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+  border-color: #00bfff;
+  box-shadow: 0 0 5px #00bfff;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 10l14 12 14-12z' fill='%23333'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: #005eff;
+  color: white;
+  font-size: 16px;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #056ac2;
 }
 
 
