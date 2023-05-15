@@ -64,9 +64,9 @@
         <div class="reviewUs" id="reviewUs">
             <h1>Contact Us / REVIEW</h1>
             <div class="formContainer">
-                <form>
-                    <input type="text" name="Name" placeholder="Full Name" required>
-                    <input type="email" name="Email" placeholder="Email" required>
+                <form id="contactForm" novalidate>
+                    <input type="text" name="Name" placeholder="Full Name" id="name" required>
+                    <input type="email" name="Email" placeholder="Email" id="email" required>
                     <select name="Continent">
                         <option>Africa</option>
                         <option>Asia</option>
@@ -76,8 +76,8 @@
                         <option>North America</option>
                         <option>South America</option>
                     </select>
-                    <textarea name="Message" placeholder="Leave a message about the website" required></textarea>
-                    <button type="submit">SUBMIT</button>
+                    <textarea name="Message" placeholder="Leave a message about the website" id="message" required></textarea>
+                    <button type="submit" id="submit">SUBMIT</button>
                 </form>
             </div>
             

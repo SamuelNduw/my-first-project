@@ -359,16 +359,8 @@ input[type="text"], input[type="email"], select, textarea {
 }
 
 input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
-  border-color: #00bfff;
-  box-shadow: 0 0 5px #00bfff;
-}
-
-select {
-  appearance: none;
-  -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M2 10l14 12 14-12z' fill='%23333'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
+  border-color: #005eff;
+  box-shadow: 0 0 5px #005eff;
 }
 
 textarea {
