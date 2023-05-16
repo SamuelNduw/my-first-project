@@ -70,7 +70,6 @@ const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const messageInput = document.querySelector('#message');
 const submitButton = document.querySelector('#submit')
-const body = document.querySelector('body');
 
 
 form.addEventListener('submit', function(event){
@@ -89,10 +88,10 @@ form.addEventListener('submit', function(event){
 
   // Improve this part of the code!!!
 
-  // if(!validateEmail(event.target.value)){
-  //   window.alert('Invalid Email address!');
-  //   invalidColor(emailInput);
-  // }
+  if(!validateEmail(emailInput)){   //(event.target.value)
+    window.alert('Invalid Email address!');
+    invalidColor(emailInput);
+  }
 
   // Error message
   errorMessage()
@@ -149,6 +148,9 @@ function errorMessage(){
   }
   else if(messageValue === ''){
     window.alert('Please fill in the message field!')
+  }
+  else{
+    console.log('no error')
   }
 }
 
