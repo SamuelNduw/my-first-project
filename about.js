@@ -86,21 +86,14 @@ form.addEventListener('submit', function(event){
     invalidColor(messageInput)
   }
 
-  // Improve this part of the code!!!
-
-  if(!validateEmail(emailInput)){   //(event.target.value)
+  // Email validation
+  if(!validateEmail(emailInput)){   
     window.alert('Invalid Email address!');
     invalidColor(emailInput);
   }
 
   // Error message
   errorMessage()
-
-  emailInput.addEventListener('blur', function(event) {
-    if(!validateEmail(event.target.value)){
-      window.alert('Invalid Email address!');
-    }
-  })
 
 })
 
@@ -115,10 +108,12 @@ document.addEventListener('click', function(event) {
   }
 });
 
+// Change border color to red
 function invalidColor(inputType){
   inputType.style.border = '2px solid red';
 }
 
+// Change border color to default
 function validColor(inputType){
   inputType.style.border = '2px solid #ccc'
 }
@@ -154,6 +149,7 @@ function errorMessage(){
   }
 }
 
+// Email validation
 function validateEmail(email){
   const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regex.test(email);

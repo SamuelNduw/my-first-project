@@ -981,6 +981,9 @@ footer{
   }
   .modal-body .emailInput:focus{
     background-color: #2767d5;
+    border-color: #005eff;
+    box-shadow: 0 0 5px #005eff;
+    border-radius: 5px;
   }
   .modal-body .passwordInput {
     display:block;
@@ -1000,6 +1003,9 @@ footer{
   }
   .modal-body .passwordInput:focus{
     background-color: #2767d5;
+    border-color: #005eff;
+    box-shadow: 0 0 5px #005eff;
+    border-radius: 5px;
   }
   .modal-body .check_wrapper{
     margin-top: 15px;

@@ -358,7 +358,7 @@ input[type="text"], input[type="email"], select, textarea {
   max-width: 400px;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+form input[type="text"]:focus, form input[type="email"]:focus, select:focus, textarea:focus {
   border-color: #005eff;
   box-shadow: 0 0 5px #005eff;
 }
@@ -648,7 +648,7 @@ button[type="submit"]:hover {
   .modal-body .emailInput {
     display:block;
     outline:0;
-    /* border-radius: 5px; */
+    border-radius: 0;
     border:none;
     border-bottom:2px solid white;
     background-color: rgba(36, 42, 53, 0.364);
@@ -663,6 +663,9 @@ button[type="submit"]:hover {
   }
   .modal-body .emailInput:focus{
     background-color: #2767d5;
+    border-color: #005eff;
+    box-shadow: 0 0 5px #005eff;
+    border-radius: 5px;
   }
   .modal-body .passwordInput {
     display:block;
@@ -682,6 +685,9 @@ button[type="submit"]:hover {
   }
   .modal-body .passwordInput:focus{
     background-color: #2767d5;
+    border-color: #005eff;
+    box-shadow: 0 0 5px #005eff;
+    border-radius: 5px;
   }
   .modal-body .check_wrapper{
     margin-top: 15px;
