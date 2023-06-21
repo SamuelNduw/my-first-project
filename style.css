@@ -224,7 +224,7 @@ nav a.active,nav a:hover{
   content: "";
   
   background-image: url('images/Fortnite_Polo_2\ \(1\)\ \(1\).jpg');
-  opacity:0.7;
+  opacity:0.9;
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -235,7 +235,7 @@ nav a.active,nav a:hover{
   width:100%;
   z-index: -1;
 
-  filter:blur(1px);
+  
 
   display:flex;
   flex-direction: column;
@@ -262,7 +262,7 @@ nav a.active,nav a:hover{
 .textWrapper .secondaryText{
   font-size: 1.2rem;
   text-align: center;
-  color:#fbfbfbb4;
+  color:#fbf9f9b9;
   width: 50%;
   margin-top: 30px;
   margin-right: auto;
